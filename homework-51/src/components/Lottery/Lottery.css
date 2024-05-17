@@ -1,16 +1,9 @@
-.Lottery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
 .Lottery-boxes {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .Lottery-box {
@@ -36,5 +29,10 @@
     &:hover {
         outline: none;
         border: 1px solid #FFF;
+    }
+
+    &:focus,
+    &:focus-visible {
+        outline: 4px auto #FFF;
     }
 }

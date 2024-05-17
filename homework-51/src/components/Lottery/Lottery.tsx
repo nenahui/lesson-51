@@ -1,18 +1,13 @@
 import './Lottery.css';
 
-const Lottery = () => {
+interface ILotteryProps {
+    num: number;
+}
+
+export const Lottery: React.FC<ILotteryProps> = ({ num }) => {
     return (
-        <div className={"Lottery-container"}>
-            <div className={"Lottery-boxes"}>
-                <div className="Lottery-box">5</div>
-                <div className="Lottery-box">11</div>
-                <div className="Lottery-box">16</div>
-                <div className="Lottery-box">23</div>
-                <div className="Lottery-box">32</div>
-            </div>
-            <button type={"button"} className={"Lottery-btn"}>New numbers</button>
+        <div className="Lottery-box">
+            {num}
         </div>
     );
 };
-
-export default Lottery;
